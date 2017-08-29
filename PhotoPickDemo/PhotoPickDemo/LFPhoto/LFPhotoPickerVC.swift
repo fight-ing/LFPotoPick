@@ -78,6 +78,7 @@ class LFPhotoPickerVC: UIViewController,UITableViewDataSource,UITableViewDelegat
         self.title = "相簿"
         let rightBarItem = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancel))
         self.navigationItem.rightBarButtonItem = rightBarItem
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
     }
     func cancel() {
         self.dismiss(animated: true, completion: nil)

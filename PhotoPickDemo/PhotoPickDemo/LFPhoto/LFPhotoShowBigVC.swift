@@ -161,7 +161,10 @@ class LFPhotoShowBigVC: UIViewController,UICollectionViewDataSource,UICollection
     
     
     @IBAction func backButtonClicked(_ sender: Any) {
+        let collectionVC:LFPhotoCollectionVC = self.navigationController?.viewControllers[1] as! LFPhotoCollectionVC
+        collectionVC.selectedDataArray = self.selectedDataArray;
         self.navigationController?.popViewController(animated: true)
+        
     }
     // MARK: UICollectionView DataSource
     func numberOfSections(in collectionView: UICollectionView) -> Int {
