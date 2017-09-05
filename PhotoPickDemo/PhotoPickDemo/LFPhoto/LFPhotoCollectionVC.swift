@@ -44,6 +44,13 @@ class LFPhotoCollectionVC: UIViewController,UICollectionViewDataSource,UICollect
         let cellSize = (self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout).itemSize
         assetGridThumbnailSize = CGSize(width: cellSize.width*scale, height: cellSize.height*scale)
         collectionView.reloadData()
+        completeButton.num = selectedDataArray.count;
+        if selectedDataArray.count > 0 {
+            completeButton.isEnabled = true;
+        } else {
+            completeButton.isEnabled = false;
+        }
+
     }
     
     override func viewDidLoad() {

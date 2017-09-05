@@ -64,6 +64,7 @@ class LFPhotoShowBigVC: UIViewController,UICollectionViewDataSource,UICollection
         super.viewDidAppear(animated)
         collectionView.isHidden = false;
         collectionView.setContentOffset(CGPoint.init(x: (CGFloat(currentIndex.row) * collectionView.frame.size.width), y: 0), animated: false);
+        scrollViewDidEndDecelerating(collectionView)
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -180,9 +181,17 @@ class LFPhotoShowBigVC: UIViewController,UICollectionViewDataSource,UICollection
         self.imageManager.requestImage(for: asset, targetSize: assetGridThumbnailSize, contentMode: PHImageContentMode.aspectFill, options: nil) { (image, nfo) in
             cell.photoImageView.image = image
         }
-        self.refreshSeletedStatus(indexPath: indexPath as NSIndexPath)
+        
         return cell;
     }
+    
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let indexPath = NSIndexPath(item: Int(scrollView.contentOffset.x/scrollView.frame.size.width), section: 0)
+        self.refreshSeletedStatus(indexPath: indexPath)
+    }
+    
+    
     
     func showAlertOfMaxnumber()  {
         let title = "你最多只能选择\(self.maxSelected)张照片"

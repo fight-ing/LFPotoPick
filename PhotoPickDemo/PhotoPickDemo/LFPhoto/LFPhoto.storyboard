@@ -56,9 +56,9 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZT-ZB-K6f">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZT-ZB-K6f" userLabel="lineView">
                                                     <rect key="frame" x="0.0" y="49" width="375" height="0.5"/>
-                                                    <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="0.59999999999999998" id="uUx-Pa-gTw"/>
                                                     </constraints>
@@ -246,7 +246,7 @@
                                     <outlet property="delegate" destination="RQB-rX-oHj" id="DdK-SB-sdJ"/>
                                 </connections>
                             </collectionView>
-                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGX-9d-NzY">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGX-9d-NzY">
                                 <rect key="frame" x="0.0" y="20" width="375" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coe-Qh-Bl7">
@@ -276,7 +276,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.40234375" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="coe-Qh-Bl7" secondAttribute="bottom" constant="5" id="EJA-6O-cSh"/>
                                     <constraint firstAttribute="trailing" secondItem="coe-Qh-Bl7" secondAttribute="trailing" constant="15" id="SGP-Z4-lCj"/>
@@ -285,9 +285,9 @@
                                     <constraint firstItem="skr-bq-Nab" firstAttribute="leading" secondItem="QGX-9d-NzY" secondAttribute="leading" constant="15" id="tnv-XY-fPp"/>
                                 </constraints>
                             </view>
-                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hri-bk-xLp">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hri-bk-xLp">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="c0n-fd-fwE"/>
                                 </constraints>

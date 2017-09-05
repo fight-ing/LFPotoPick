@@ -23,6 +23,8 @@
 		A5BA5FC51F5518BC001ED5EE /* LFPhoto.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BA5FC41F5518BB001ED5EE /* LFPhoto.xcassets */; };
 		A5BA5FC71F55542A001ED5EE /* LFPhotoShowBigCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BA5FC61F55542A001ED5EE /* LFPhotoShowBigCell.swift */; };
 		A5BA5FC91F5559C9001ED5EE /* LFCompleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BA5FC81F5559C9001ED5EE /* LFCompleteButton.swift */; };
+		A5BA5FED1F5E7D83001ED5EE /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BA5FEC1F5E7D83001ED5EE /* Photos.framework */; };
+		A5BA5FEF1F5E83FB001ED5EE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BA5FEE1F5E83FB001ED5EE /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		A5BA5FC41F5518BB001ED5EE /* LFPhoto.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LFPhoto.xcassets; sourceTree = "<group>"; };
 		A5BA5FC61F55542A001ED5EE /* LFPhotoShowBigCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFPhotoShowBigCell.swift; sourceTree = "<group>"; };
 		A5BA5FC81F5559C9001ED5EE /* LFCompleteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFCompleteButton.swift; sourceTree = "<group>"; };
+		A5BA5FEC1F5E7D83001ED5EE /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		A5BA5FEE1F5E83FB001ED5EE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BA5FEF1F5E83FB001ED5EE /* AssetsLibrary.framework in Frameworks */,
+				A5BA5FED1F5E7D83001ED5EE /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,7 @@
 				A588CF121F53F69E00F09CB0 /* PhotoPickDemoTests */,
 				A588CF1D1F53F69E00F09CB0 /* PhotoPickDemoUITests */,
 				A588CEFC1F53F69D00F09CB0 /* Products */,
+				A5BA5FEB1F5E7D82001ED5EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +165,15 @@
 				A5BA5FC41F5518BB001ED5EE /* LFPhoto.xcassets */,
 			);
 			path = LFPhoto;
+			sourceTree = "<group>";
+		};
+		A5BA5FEB1F5E7D82001ED5EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA5FEE1F5E83FB001ED5EE /* AssetsLibrary.framework */,
+				A5BA5FEC1F5E7D83001ED5EE /* Photos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
